@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Compatibility Fix</title>
+    <!-- Firebase SDKs (Compat Versions) -->
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <h1>Testing Firebase Compatibility</h1>
+    <script>
+        // Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAeXNZSCoe19NHdCazHwRYCNnX7RYARfV0",
+            authDomain: "stormtrack-e25c2.firebaseapp.com",
+            projectId: "stormtrack-e25c2",
+            storageBucket: "stormtrack-e25c2.appspot.com",
+            messagingSenderId: "963058909171",
+            appId: "1:963058909171:web:7ca217f912f8e72adb1c86",
+            measurementId: "G-MNVDE3K8GJ"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        console.log("Firebase initialized successfully!");
+    </script>
+</body>
+</html>
